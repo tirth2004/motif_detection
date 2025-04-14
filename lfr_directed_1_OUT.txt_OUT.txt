@@ -1,0 +1,84 @@
+
+   Summary motif results
+   =====================
+mfinder Version 1.20
+
+MOTIF FINDER RESULTS:
+
+	Network name: lfr_directed_1_cleaned.txt
+	Network type: Directed
+	Num of Nodes: 709 Num of Edges: 12405
+	Num of Nodes with edges: 709
+	Maximal out degree (out-hub) : 55
+	Maximal in degree (in-hub) : 63
+	Roots num: 0 Leaves num: 0
+	Single Edges num: 12364 Mutual Edges num: 0
+
+	Motif size searched  3
+	Total number of 3-node subgraphs : 417804
+	Number of random networks generated : 1000
+	Random networks generation method: Switches
+	Num of Switches range: 100.0-200.0, Success switches Ratio:0.881+-0.00
+
+The following motifs were found:
+
+Criteria taken : Pval < 0.010
+                 Mfactor > 1.10
+                 Uniqueness >= 4
+
+MOTIF	NREAL	NRAND		NREAL	NREAL	UNIQ	CREAL
+ID		STATS		ZSCORE	PVAL	VAL	[MILI]	
+38	19973	6843.7+-77.2	170.15	0.000	177	47.80
+
+0 1 1 
+0 0 1 
+0 0 0 
+
+98	6763	2274.4+-45.7	98.32	0.000	178	16.19
+
+0 1 0 
+0 0 1 
+1 0 0 
+
+
+
+
+Full list of subgraphs size 3 ids:
+
+	( Total num of different subgraphs size 3 is : 13 )
+
+MOTIF	NREAL	NRAND		NREAL	NREAL	CREAL	UNIQ
+ID		STATS		ZSCORE	PVAL	[MILI]	
+6	97796	110752.3+-77.8	-166.62	1.000	234.07	218
+
+12	194656	221096.3+-160.0	-165.29	1.000	465.90	215
+
+14	0	0.0+-0.0	888888	1.000	0.00	0
+
+36	97688	110614.0+-78.0	-165.71	1.000	233.81	217
+
+38	19973	6843.7+-77.2	170.15	0.000	47.80	177
+
+46	0	0.0+-0.0	888888	1.000	0.00	0
+
+74	0	0.0+-0.0	888888	1.000	0.00	0
+
+78	0	0.0+-0.0	888888	1.000	0.00	0
+
+98	6763	2274.4+-45.7	98.32	0.000	16.19	178
+
+102	0	0.0+-0.0	888888	1.000	0.00	0
+
+108	0	0.0+-0.0	888888	1.000	0.00	0
+
+110	0	0.0+-0.0	888888	1.000	0.00	0
+
+238	0	0.0+-0.0	888888	1.000	0.00	0
+
+
+
+ (Application total runtime was:   1.59 hours.)
+
+ (Real network processing runtime was:    2.0 seconds.)
+
+ (Single Random network processing runtime was:    5.7 seconds.)

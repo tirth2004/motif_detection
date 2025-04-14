@@ -23,11 +23,11 @@ def process_graph_file(input_file, output_file):
     # Process and deduplicate edges
     with open(output_file, 'w') as f:
         for line in lines:
-            # Strip whitespace and split the line into two nodes
-            nodes = line.strip().split()
+            # Strip whitespace and split the line into nodes and weight
+            parts = line.strip().split()
             
-            # Ensure we have exactly two nodes
-            if len(nodes) != 2:
+            # Ensure we have exactly three parts (source, target, weight)
+            if len(parts) != 3:
                 print(f"Skipping invalid line: {line.strip()}")
                 continue
             
@@ -35,8 +35,9 @@ def process_graph_file(input_file, output_file):
             total_lines += 1
             
             # Convert to integers
-            source = int(nodes[0])
-            target = int(nodes[1])
+            source = int(parts[0])
+            target = int(parts[1])
+            weight = int(parts[2])
             
             # Skip self-edges
             if source == target:
@@ -50,7 +51,7 @@ def process_graph_file(input_file, output_file):
             if edge not in unique_edges:
                 unique_edges.add(edge)
                 # Write in format: node1 node2 weight
-                f.write(f"{source} {target} 1\n")
+                f.write(f"{source} {target} {weight}\n")
             else:
                 duplicate_edges_count += 1
     
@@ -61,8 +62,8 @@ def process_graph_file(input_file, output_file):
     print(f"Wrote {len(unique_edges)} unique edges to {output_file}")
 
 # Process the Twitter graph file
-input_file = 'wiki-Vote.txt'
-output_file = 'wiki_cleaned.txt'
+input_file = 'lfr_directed_1.txt'
+output_file = 'lfr_directed_1_cleaned.txt'
 
 # Process the graph file
 process_graph_file(input_file, output_file)
