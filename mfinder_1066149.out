@@ -1,0 +1,20 @@
+==========================================
+SLURM_CLUSTER_NAME = param-shivay
+SLURM_ARRAY_JOB_ID = 
+SLURM_ARRAY_TASK_ID = 
+SLURM_ARRAY_TASK_COUNT = 
+SLURM_ARRAY_TASK_MAX = 
+SLURM_ARRAY_TASK_MIN = 
+SLURM_JOB_ACCOUNT = comp_sci_engg
+SLURM_JOB_ID = 1066149
+SLURM_JOB_NAME = mfinder
+SLURM_JOB_NODELIST = cn077
+SLURM_JOB_USER = tirth.cse22.itbhu
+SLURM_JOB_UID = 6018
+SLURM_JOB_PARTITION = standard
+SLURM_TASK_PID = 38621
+SLURM_SUBMIT_DIR = /home/tirth.cse22.itbhu/mfinder_analysis
+SLURM_CPUS_ON_NODE = 1
+SLURM_NTASKS = 1
+SLURM_TASK_PID = 38621
+==========================================
