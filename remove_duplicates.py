@@ -62,8 +62,8 @@ def process_graph_file(input_file, output_file):
     print(f"Wrote {len(unique_edges)} unique edges to {output_file}")
 
 # Process the Twitter graph file
-input_file = 'lfr_directed_3.txt'
-output_file = 'lfr_directed_3_cleaned.txt'
+input_file = 'lfr_directed_iter2_5.txt'
+output_file = 'lfr_directed_iter2_5_cleaned.txt'
 
 # Process the graph file
 process_graph_file(input_file, output_file)
