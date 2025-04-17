@@ -27,17 +27,35 @@ def generate_directed_lfr(
 
     return DG
 
-# Parameter sets
+# Original params (for reference)
+# params = [
+#     (710, 4.0, 1.2, 0.28, 28, 110, 20, 100, 1),
+#     (715, 3.9, 1.5, 0.35, 30, 120, 25, 120, 2),
+#     (705, 4.3, 1.1, 0.39, 27, 105, 30, 150, 3),
+# ]
+
+# New params with varied social network structures (corrected order)
 params = [
-    (710, 4.0, 1.2, 0.28, 28, 110, 20, 100, 1),
-    (715, 3.9, 1.5, 0.35, 30, 120, 25, 120, 2),
-    (705, 4.3, 1.1, 0.39, 27, 105, 30, 150, 3),
+    # Dense Social Network (Facebook-like: high connectivity, strong communities)
+    (1000, 2.2, 1.2, 0.15, 20, 50, 20, 100, 1),
+    
+    # Sparse Professional Network (LinkedIn-like: fewer connections, clear hierarchy)
+    (1000, 2.8, 1.8, 0.25, 8, 30, 10, 50, 2),
+    
+    # Scale-Free Social Network (Twitter-like: many weak ties, few strong hubs)
+    (1000, 1.8, 1.5, 0.3, 12, 100, 5, 200, 3),
+    
+    # Tight-Knit Community Network (Family/Friend groups: strong local connections)
+    (1000, 2.5, 1.3, 0.1, 15, 40, 30, 150, 4),
+    
+    # Mixed-Scale Network (Real-world social: combination of different scales)
+    (1000, 2.0, 1.6, 0.2, 10, 80, 15, 120, 5)
 ]
 
 # Generate and save each graph
 for i, p in enumerate(params, start=1):
     G = generate_directed_lfr(*p)
-    filename = f"lfr_directed_{i}.txt"
+    filename = f"lfr_directed_iter2_{i}.txt"
     with open(filename, "w") as f:
         for u, v in G.edges():
             f.write(f"{u} {v} 1\n")
