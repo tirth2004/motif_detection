@@ -1,0 +1,109 @@
+==========================================
+SLURM_CLUSTER_NAME = param-shivay
+SLURM_ARRAY_JOB_ID = 
+SLURM_ARRAY_TASK_ID = 
+SLURM_ARRAY_TASK_COUNT = 
+SLURM_ARRAY_TASK_MAX = 
+SLURM_ARRAY_TASK_MIN = 
+SLURM_JOB_ACCOUNT = comp_sci_engg
+SLURM_JOB_ID = 1067999
+SLURM_JOB_NAME = mfinder
+SLURM_JOB_NODELIST = cn129
+SLURM_JOB_USER = tirth.cse22.itbhu
+SLURM_JOB_UID = 6018
+SLURM_JOB_PARTITION = standard
+SLURM_TASK_PID = 237131
+SLURM_SUBMIT_DIR = /home/tirth.cse22.itbhu/mfinder_analysis
+SLURM_CPUS_ON_NODE = 40
+SLURM_NTASKS = 1
+SLURM_TASK_PID = 237131
+==========================================
+Input Network file is lfr_directed_iter2_5_cleaned.txt
+mfinder Version 1.20
+
+Loading Network
+	Reading Network file in <Source,Target,Weight> Format
+Searching motifs size 3
+Processing Real network...
+
+ (Real network processing runtime was:    0.0 seconds.)
+Processing Random networks
+....................................................................................................
+ Estimated run time left :     16 minutes.
+
+....................................................................................................
+ Estimated run time left :     14 minutes.
+
+....................................................................................................
+ Estimated run time left :     12 minutes.
+
+....................................................................................................
+ Estimated run time left :     11 minutes.
+
+....................................................................................................
+ Estimated run time left :      9 minutes.
+
+....................................................................................................
+ Estimated run time left :      7 minutes.
+
+....................................................................................................
+ Estimated run time left :      5 minutes.
+
+....................................................................................................
+ Estimated run time left :    217 seconds.
+
+....................................................................................................
+ Estimated run time left :    109 seconds.
+
+....................................................................................................
+ Estimated run time left :      0 seconds.
+
+
+Calculating Results...
+
+MOTIF FINDER RESULTS:
+
+	Network name: lfr_directed_iter2_5_cleaned.txt
+	Network type: Directed
+	Num of Nodes: 999 Num of Edges: 5849
+	Num of Nodes with edges: 999
+	Maximal out degree (out-hub) : 46
+	Maximal in degree (in-hub) : 37
+	Roots num: 5 Leaves num: 14
+	Single Edges num: 5837 Mutual Edges num: 0
+
+	Motif size searched  3
+	Total number of 3-node subgraphs : 105628
+	Number of random networks generated : 1000
+	Random networks generation method: Switches
+	Num of Switches range: 100.0-200.0, Success switches Ratio:0.929+-0.00
+
+The following motifs were found:
+
+Criteria taken : Pval < 0.010
+                 Mfactor > 1.10
+                 Uniqueness >= 4
+
+MOTIF	NREAL	NRAND		NREAL	NREAL	UNIQ	CREAL
+ID		STATS		ZSCORE	PVAL	VAL	[MILI]	
+38	3776	912.6+-36.5	78.45	0.000	109	35.75
+
+0 1 1 
+0 0 1 
+0 0 0 
+
+98	1233	302.6+-18.6	49.95	0.000	93	11.67
+
+0 1 0 
+0 0 1 
+1 0 0 
+
+
+
+ (Application total runtime was:  18.30 minutes).
+
+ (Real network processing runtime was:    0.0 seconds.)
+
+ (Single Random network processing runtime was:    1.1 seconds.)
+
+Output File lfr_directed_iter2_5_OUT.txt was generated

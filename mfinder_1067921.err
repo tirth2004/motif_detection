@@ -1,0 +1,9 @@
+Lmod has detected the following error: The following module(s) are unknown:
+"gcc/9.3.0"
+
+Please check the spelling or version number. Also try "module spider ..."
+
+
+
+
+slurmstepd: error: *** JOB 1067921 ON cn021 CANCELLED AT 2025-04-18T12:38:39 DUE TO TIME LIMIT ***
